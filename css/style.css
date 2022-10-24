@@ -270,7 +270,7 @@ p{
 .hero-title h1:nth-child(2) .textRevealBox{
     animation-delay: 2.3s;
 }
- none.hero-title h1:nth-child(3) .textRevealBox{
+.hero-title h1:nth-child(3) .textRevealBox{
     animation-delay: 3.8s;
 }
 .hero-title h1 span{
