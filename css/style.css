@@ -69,7 +69,7 @@ p{
 }
 
 .fa-brands{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .in, .gh, .fb, .tw, .ig{
@@ -178,7 +178,7 @@ p{
 /* ====================END OF FONTS============== */
 
 /* ================================= HEADER SECTION ===================== */
-#header{
+/* #header{
     z-index: 1;
     background-image: linear-gradient(60deg, #000000 60%, #040f29 100%);
 }
@@ -206,6 +206,152 @@ p{
 .navbar .nav-link.active:hover{
     color: #ffffff;
     box-shadow: inset 200px 0 0 0 #0077b5;
+} */
+#header{
+    position: fixed;
+    z-index: 1000;
+    left:0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    
+}
+#header .logo h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+#header .header-container {
+    min-height: 5vh;
+    background-color: rgba(31, 30, 30, 0.24);
+    transition: .3s ease background-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#header .navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+#header .navList ul{
+    list-style: none;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    background-image: linear-gradient(60deg, #000000 60%, #040f29 100%);
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .5s ease left;
+
+}
+#header .navList ul.active{
+    left: 0;
+}
+#header .navList ul a{
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    Display: block;
+}
+#header .navList ul a::after {
+    content: attr(data-after);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0);
+    color: rgba(232, 232, 236, 0.03);
+    font-size: 8rem;
+    letter-spacing: 50px;
+    z-index: -1;
+    transition: .3s ease letter-spacing;
+}
+#header .navList ul li:hover a{
+    color: #0077b5;
+    transition: .3s ease;
+}
+#header .navList ul li:hover a::after{
+    transform: translate(-50%, -50%)scale(1);
+    letter-spacing: initial;
+} 
+#header .hamburger{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    z-index: 100;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: scale(.8);
+    margin-right: 20px;
+}
+#header .hamburger::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: hamburger_puls 1s ease infinite;
+
+}
+#header .hamburger .bar{
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width:100%;
+    left: 0;
+    background-color: white;
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+#header .hamburger .bar::after{
+    top: 8px;
+}
+#header .hamburger .bar::before{
+    bottom: 8px;
+}
+#header .hamburger.active .bar::before{
+    bottom: 0;
+}
+#header .hamburger.active .bar::after {
+    top: 0;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
 }
 /* ================================= END OF HEADER SECTION ===================== */
 
@@ -306,13 +452,24 @@ p{
 .card-container-mobile small{
     opacity: 0;
     
+    
 }
-
+.card-container-mobile .column{
+    transition: 1s ease-out;
+}
+.card-container-mobile .column:hover{
+    background-color: #30639c4d;
+    transition: .2s ease-in-out;
+}
+.card-header{
+    background-image: linear-gradient(60deg, #000000 60%, #040f29 100%);
+}
 /* ========================END OF SKILLS SECTION================ */
 
 /* =======================PORTFOLIO SECTION================ */
 .portfolio ul {
     list-style: none;
+    
     margin-bottom: 20px;
 }
 .portfolio ul li {
@@ -363,7 +520,7 @@ p{
     color: #ffffff;
 }
 #aboutMe .card-body p, #aboutMe ul li{
-    text-indent: 3rem;
+    text-indent: 0;
     text-align: justify;
     line-height: 1.5rem;
     letter-spacing: 1px;
@@ -466,6 +623,7 @@ p{
     .section-title{
         font-size: 3rem;
     }
+    
     /* ========ABOUT SECTION====== */
     #aboutMe .cta, #contactMe .cta{
         padding: 10px 30px;
@@ -570,6 +728,10 @@ p{
         height: 25rem;
         width: 25rem;
     }
+    /*======ABOUT SECTION 768 MD=====*/
+    #aboutMe .card-body p, #aboutMe ul li{
+        text-indent: 0;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -594,6 +756,28 @@ p{
     
     .display-1{
         font-size: 11rem;
+    }
+    /*===HEADER SECTION=====*/
+    #header .hamburger {
+        display: none;
+    }
+    #header .navList ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+        background-image: none;
+
+    }
+    #header .navList ul li{
+        display: inline-block;
+    }
+    #header .navList ul li a{
+        font-size: 1.3rem;
+    }
+    #header .navList ul a::after{
+        display: none;
     }
     
     /* =========HERO SECTION 1200px XL======== */

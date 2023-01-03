@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Michael's Portfolio</title>
 
   <!-- BootStrap 5.2 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  
+
+  <!--FAVICON-->
+  <link rel="shortcut icon" class="border rounded-circle" href="media/hero_pic/profile1.jpg" type="images/x-icon">
+
   <!-- Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,34 +29,24 @@
 </head>
 <body>
   <!-- ===========================NAVIGATION SECTION========================= -->
-  <div id="header" class="position-fixed w-100">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-3 col-3" href="#"><span class="sts">M</span><span>I</span><span>C</span><span>H</span><span>A</span><span>E</span><span>L</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="fa-solid fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav col-8 justify-content-evenly">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutMe">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactMe">Contact Me</a>
-            </li>
-          </ul>
-        </div>
+  <div id="header" class="autohide">
+    <div class="header-container">
+      <div class="navBar">
+          <div class="logo">
+              <a href="index.html"><h1><span class="sts">M</span><span>I</span><span>C</span><span>H</span><span>A</span><span>E</span><span>L</span></h1></a>
+          </div>
+          <div class="navList">
+              <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                  <li><a href="#hero" data-after="Home">Home</a></li>
+                  <li><a href="#portfolio" data-after="Portfolio">portfolio</a></li>
+                  <li><a href="#skills" data-after="Skills">skills</a></li>
+                  <li><a href="#aboutMe" data-after="About">About me</a></li>
+                  <li><a href="#contactMe" data-after="Contact">Contact me</a></li>
+              </ul>
+          </div>
       </div>
-    </nav>
+    </div>
   </div>
   <!-- ===========================END OF NAVIGATION SECTION========================= -->
 
@@ -99,14 +92,11 @@
     <div class="justify-content-around row mx-xxl-5 mx-xl-4 card-container">
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">HTML</p>
-            <p class="font-width-bold">80%</p>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+          
         </div>
         <div class="card-body">
           <img src="./media/skills_pic/html.png">
@@ -114,14 +104,11 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">CSS</p>
-            <p class="font-width-bold">75%</p>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+          
         </div>
         <div class="card-body">
           <img src="./media/skills_pic/css.png">
@@ -129,14 +116,11 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">BOOTSTRAP</p>
-            <p class="font-width-bold">75%</p>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+          
         </div>
         <div class="card-body">
           <img src="./media/skills_pic/bootstrap.png">
@@ -144,14 +128,11 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">Python</p>
-            <p class="font-width-bold">75%</p>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+          
         </div>
         <div class="card-body">
           <img src="./media/skills_pic/python.png">
@@ -159,14 +140,11 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">Django</p>
-            <p class="font-width-bold">75%</p>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+          
         </div>
         <div class="card-body">
           <img src="./media/skills_pic/django.png">
@@ -174,14 +152,11 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">Node Js</p>
-            <p class="font-width-bold">75%</p>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+          
         </div>
         <div class="card-body">
           <img src="./media/skills_pic/node.png">
@@ -189,14 +164,11 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">React</p>
-            <p class="font-width-bold">75%</p>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+          
         </div>
         <div class="card-body">
           <img src="./media/skills_pic/react.png">
@@ -204,14 +176,11 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">PHP</p>
-            <p class="font-width-bold">75%</p>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
+          
         </div>
         <div class="card-body">
           <img src="./media/skills_pic/php.png">
@@ -219,13 +188,9 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">Laravel</p>
-            <p class="font-width-bold">75%</p>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="card-body">
@@ -234,13 +199,9 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">Postgresql</p>
-            <p class="font-width-bold">75%</p>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="card-body">
@@ -249,13 +210,9 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">Git</p>
-            <p class="font-width-bold">75%</p>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="card-body">
@@ -264,13 +221,9 @@
       </div>
 
       <div class="card text-white mb-3">
-        <div class="skill card-header bg-dark">
+        <div class="skill card-header">
           <div class="d-flex justify-content-between">
             <p class="font-width-bold">Javascript</p>
-            <p class="font-width-bold">75%</p>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="background-color: orangered;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="card-body">
@@ -280,158 +233,159 @@
 
     </div>
 
-    <!--SKILL BAR MOBILE HTML-->
+    <!--SKILL BAR MOBILE-->
     <div class="col-12 card-container-mobile">
-
-      <div class="column mb-4">
+      
+      <!--SKILL BAR MOBILE HTML-->
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">HTML</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Advanced</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-html5 html"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar html" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar html" role="progressbar" aria-label="Success example" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
 
       <!--SKILL BAR MOBILE CSS-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">CSS</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Advanced</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-css3-alt css"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar css" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar css" role="progressbar" aria-label="Success example" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
 
       <!--SKILL BAR MOBILE BOOTSRAP-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">Bootstrap</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Advanced</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-bootstrap bs"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar bs" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar bs" role="progressbar" aria-label="Success example" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
       
       <!--SKILL BAR MOBILE PYTHON-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">Python</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Advanced</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-python py"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar py" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar py" role="progressbar" aria-label="Success example" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
       
       <!--SKILL BAR MOBILE JAVASCRIPT-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">Javascript</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Advanced</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-square-js js text-warning"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar bg-warning" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar bg-warning" role="progressbar" aria-label="Success example" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
       
       <!--SKILL BAR MOBILE NODE JS-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">NODE JS</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Beginner</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-node-js njs"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar njs" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar njs" role="progressbar" aria-label="Success example" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
       
       <!--SKILL BAR MOBILE REACT-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">React</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Beginner</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-react react"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar react" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar react" role="progressbar" aria-label="Success example" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
       
       <!--SKILL BAR MOBILE PHP -->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">PHP</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Intermidiate</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-php php"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar php" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar php" role="progressbar" aria-label="Success example" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
       
       <!--SKILL BAR MOBILE LARAVEL-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">Laravel</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Beginner</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-laravel lar"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar lar" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar lar" role="progressbar" aria-label="Success example" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
       
       <!--SKILL BAR MOBILE POSTGRESQL-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">Postgresql</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Intermidiate</p>
         </div>
         <div class="d-flex">
           <div class="col-2 fa-brands"><i class="fa-solid fa-database sql"></i></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar sql" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar sql" role="progressbar" aria-label="Success example" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
       
       <!--SKILL BAR MOBILE GIT-->
-      <div class="column mb-4">
+      <div class="column py-2">
         <div class="d-flex justify-content-between">
           <p class="font-width-bold">Git</p>
-          <p class="font-width-bold">75%</p>
+          <p class="font-width-bold">Advanced</p>
         </div>
         <div class="d-flex">
           <div class="col-2"><i class="fa-brands fa-github git"></i></div>
           <div class="progress col-10 align-self-center">
-            <div class="progress-bar git" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
+            <div class="progress-bar git" role="progressbar" aria-label="Success example" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><small>75%</small></div>
           </div>
         </div>
       </div>
@@ -449,62 +403,82 @@
     <div class="container">
       <!--===FILTER=====-->
       <div class="d-flex justify-content-center">
-        <ul>
-          <li class="filter-active">All</li>
-          <li>Django</li>
-          <li>API</li>
-          <li>CSS</li>
+        <ul id="portfolio-flters">
+          <li class="filter-active" data-filter="*">All</li>
+          <li data-filter=".javascript">Javascript</li>
+          <li data-filter=".api">API</li>
+          <li data-filter=".django">Django</li>
+          <li data-filter=".laravel">Laravel</li>
+          <li data-filter=".css">CSS</li>
         </ul>
       </div>
 
       <!-- =======LIST OF ALL PROJECTS ====== -->
-      <div class="row">
+      <div class="row portfolio-container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item css">
           <div class="portfolio-img">
             <a href="https://mjmm002.github.io/One-Page-Portfolio-Website/"><img src="media/portfolio_pic/image1.PNG" alt=""></a>
           </div>
         </div>
+        
+        <div class="col-lg-4 col-md-6 portfolio-item javascript">
+          <div class="portfolio-img">
+            <a href="https://mjmm002.github.io/speedConverter/"><img src="media/portfolio_pic/image9.PNG" alt=""></a>
+          </div>
+        </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item javascript">
+          <div class="portfolio-img">
+            <a href="https://mjmm002.github.io/mathGames/"><img src="media/portfolio_pic/image10.PNG" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item javascript">
+          <div class="portfolio-img">
+            <a href="https://mjmm002.github.io/toDoList/"><img src="media/portfolio_pic/image11.PNG" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item javascript api">
           <div class="portfolio-img">
             <a href="https://mjmm002.github.io/Pokedex-Javascript-API/"><img src="media/portfolio_pic/image8.PNG" alt=""></a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item javascript">
           <div class="portfolio-img">
-            <a href="https://github.com/mjmm002/todo_list"><img src="media/portfolio_pic/image7.PNG" alt=""></a>
+            <a href="https://mjmm002.github.io/mocafe/menu.html"><img src="media/portfolio_pic/image12.PNG" alt=""></a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item css">
           <div class="portfolio-img">
             <a href="https://mjmm002.github.io/OnlineLibrary/checkout.html"><img src="media/portfolio_pic/image3.PNG" alt=""></a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item css">
           <div class="portfolio-img">
             <a href="https://mjmm002.github.io/OnlineLibrary/payment.html?"><img src="media/portfolio_pic/image4.PNG" alt=""></a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item django">
           <div class="portfolio-img">
             <a href="https://github.com/mjmm002/django-blog-app"><img src="media/portfolio_pic/image5.PNG" alt=""></a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item css">
           <div class="portfolio-img">
             <a href="https://mjmm002.github.io/OnlineLibrary/"><img src="media/portfolio_pic/image2.PNG" alt=""></a>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item django">
           <div class="portfolio-img">
-            <a href="#"><img src="media/portfolio_pic/image6.PNG" alt=""></a>
+            <a href="https://github.com/mjmm002/simple-todo-list"><img src="media/portfolio_pic/image7.PNG" alt=""></a>
           </div>
         </div>
 
@@ -528,19 +502,19 @@
         </div>
         <div class="col-lg-7 d-flex flex-column align-content-lg-start h-100">
           <div class="row about-info">
-            <div class="col-md-6">
+            <div class="col-md-8">
               <ul>
                 <li><strong>Name:</strong> <span>Michael Manlapig</span></li>
-                <li><strong>Website:</strong> <span>www.xyz.com</span></li>
-                <li><strong>Phone:</strong> <span>09567901356</span></li>
-                <li><strong>City:</strong> <span>Apalit</span></li>
+                <li><strong>Website:</strong> <span>https://mjmm002.github.io/MiniProject1</span></li>
+                <li><strong>Email:</strong> <span>michaeljoseph02manlapig@gmail.com</span></li>
+                <li><strong>Degree:</strong> <span>College Graduate</span></li>
               </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <ul>
                 <li><strong>Age:</strong> <span>24</span></li>
-                <li><strong>Degree:</strong> <span>College Graduate</span></li>
-                <li><strong>Email:</strong> <span>mjmanlapig1@gmail.com</span></li>
+                <li><strong>City:</strong> <span>Apalit</span></li>
+                <li><strong>Phone:</strong> <span>09567901356</span></li>
                 <li><strong>Freelance:</strong> <span>Available</span></li>
               </ul>
             </div>
@@ -614,8 +588,16 @@
       </p>
   </div>
 
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   
-
+  <!--Bootstrap 5.2 JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
+  <!--Cloudfare Isotopes for filter-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+  <!--Static Javascript-->
+  <script src="js/script.js"></script>
 </body>
 </html>
