@@ -761,10 +761,19 @@ p{
     #header .hamburger {
         display: none;
     }
+
+    #header .header-container {
+        height: 5vh;
+        align-items: center;
+        align-content: center;
+    }
     #header .navList ul{
         position: initial;
-        display: block;
-        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 10px;
         width: fit-content;
         background-color: transparent;
         background-image: none;

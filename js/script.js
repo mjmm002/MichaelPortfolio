@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 var portfolioIsotope = $('.portfolio-container').isotope({itemSelector: '.portfolio-item', layoutMode: 'fitRows'});
     $('#portfolio-flters li').on('click', function (){
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
+        $("#portfolio-flters li").removeClass('active').removeClass('filter-active');
+        $(this).addClass('active').addClass('filter-active');
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
