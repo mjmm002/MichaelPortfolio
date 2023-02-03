@@ -768,6 +768,8 @@ p{
         align-content: center;
     }
     #header .navList ul{
+        height: 5vh;
+        overflow: hidden;
         position: initial;
         display: flex;
         justify-content: center;
